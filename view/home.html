@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/bootstrap" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <nav class="nav bg-dark text-light shadow mb-3">
+            <a class="nav-link text-light active" href="/">Home</a>
+            <a class="nav-link text-light" href="/users">Users</a>        
+        </nav>
+        
+        <div class="container border rounded-3 shadow-sm">
+            
+                <form method="POST" action="/create">
+                        <div class="mb-3">
+                            <h1 class="text-center">New Student</h1>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input class="form-control" type="text" name="name"/>
+                         </div>
+                         <div class="mb-3">
+                            <label class="form-label">Birth</label>
+                            <input class="form-control" type="date" name="age"/>
+                        </div>
+                        <div class="mb-3 text-center">
+                            <input class="btn btn-success" type="submit" value="Send">
+                        </div>
+                </form>
+            
+        </div>
+    </body>
+</html>
